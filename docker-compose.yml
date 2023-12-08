@@ -36,7 +36,7 @@ services:
       - elk
     depends_on:
       - elasticsearch
-    command: logstash -f /usr/share/logstash/pipeline/logstash-bn-api.config
+    command: logstash -f /usr/share/logstash/pipeline/logstash-nginx.config
 
   kibana:
     build:
